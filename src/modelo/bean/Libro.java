@@ -8,6 +8,8 @@ public class Libro {
 	private String autor;
 	private int num_pag;
 	
+	//Libro
+	
 	private ArrayList<Prestamo> prestamos;
 	
 	public int getId() {
