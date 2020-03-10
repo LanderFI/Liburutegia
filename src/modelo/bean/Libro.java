@@ -8,7 +8,7 @@ public class Libro {
 	private String autor;
 	private int num_pag;
 	
-	//Libro
+	//Libro d
 	
 	private ArrayList<Prestamo> prestamos;
 	
