@@ -1,6 +1,7 @@
 package modelo.bean;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Socio {
 	
@@ -62,6 +63,38 @@ public class Socio {
 	public void setPrestamos(ArrayList<Prestamo> prestamos) {
 		this.prestamos = prestamos;
 	}
+	
+	public int select(int idSocio) {
+		
+		ArrayList<Prestamo> prestamos = new ArrayList<Prestamo>();
+		
+		return idSocio;
+		
+	}
+	public boolean exist(int idSocio) {
+		
+		Iterator<Prestamo> i = this.prestamos.iterator();
+		Prestamo prestamo;
+		
+		while(i.hasNext()){
+			prestamo = i.next();
+			if(!prestamo.esInscrito()){
+				
+				return false;
+			}
+		}
+		
+		return true;
+		
+	}
+	public ArrayList<Socio> selectAll(){
+		
+		ArrayList<Prestamo> prestamos = new ArrayList<Prestamo>();
+		
+		return null;
+		
+	}
+
 
 	
 }
